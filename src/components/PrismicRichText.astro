@@ -1,0 +1,10 @@
+---
+import { asHTML } from "@prismicio/helpers";
+const { content } = Astro.props;
+
+const html = asHTML(content);
+---
+
+<div class="prose prose-h1:text-blue-600 max-w-full">
+  <Fragment set:html={html} />
+</div>

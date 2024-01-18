@@ -1,0 +1,9 @@
+---
+import { asText } from "@prismicio/helpers";
+
+const { content } = Astro.props;
+
+const text = asText(content);
+---
+
+{text}
